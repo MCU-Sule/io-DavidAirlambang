@@ -1,0 +1,40 @@
+1. add file chooser implementation to save and load file
+    -> File chooser dibagian nio
+
+2. add save and load 2 using java nio
+    -> File chooser dibagian nio
+
+3. add error handling for this application
+   - list all error scenario that potentially happen ?
+    -> kalo field kosong -> alert field
+    -> kalo gk jadi load file -> di if null
+
+
+4. is it better to save data on plain text or json ? why ?
+    -> JSON, karena JSON dapat sudah memiliki masing" index sehingga memudahkan dalam penggunaan data.
+
+5. is there a better format to json to store data on plain text ?
+   name a couple of alternatives (min 2)
+   -> YAML mirip JSON tapi ada identasi(tab)
+   -> XML pake braket milih html jadi bisa lebih kompleks tapi lebih sulit dibaca
+   -> CSV digunakan lebih ke arah data" spreadsheet
+
+6. is it better to save data on file instead of a dedicated database ?
+   is there a scenario where saving data on file be better ?
+   -> database : data terstruktur dengan table" bisa dihubungkan satu sama lain
+   -> files : data tidak terstruktur read, write nya lebih efisien lebih cepat
+
+7. can you test if a specific file exist in a specified path with java ?
+   how ?
+    -> menggunakan File.isFile()
+
+8  can you test if a specific  directory exist in a specified path ?
+   how ?
+    -> File.exists() / file.isDirectory()
+
+9. can you delete or move file using java ? how ?
+    -> Files.move dan .delete
+
+10. can you think of potential security problem when you allow java to freely
+   change file on your computer ? how do we prevent that ?
+   -> menurut https://www.pbsnow.com/it-industry-news/three-tips-for-dealing-with-java-security-vulnerabilities/ java sudah mengatasinya dengan versi diatas thn 2015
